@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: skyblue;
+            height: 50px;
+        }
+        .main{
+            height: 200px;
+            background-color: rgb(93, 202, 245);
+            
+        }
+        .page{
+            display: flex;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+        #two-1{
+            width: 30%;
+            height: 300px;
+            background-color: brown;
+
+        }
+        #two-2{
+            height: 300px;
+            width: 70%;
+        
+        }
+        @media screen and (max-width:767px) {
+            .page{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #two-1{
+                width:100%;
+                
+            }
+            #two-2{
+                width: 100%;
+            }
+        }
+      @media screen and (min-width:768px) and (max-width:1023px){
+        .page{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #two-1{
+            width: 30%;
+        }
+        #two-2{
+            width: 70%;
+        }
+      }
+      @media screen and (min-width:1024) {
+        .page{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #two-1{
+            width:20%;
+        }
+        #two-2{
+            width: 80%;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="main"></div>
+  <div class="page">
+    <div class="one" id="two-1">1</div>
+    <div class="one" id="two-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque doloremque aliquid obcaecati molestias mollitia quae quo! Optio, eveniet beatae excepturi eos enim itaque quo temporibus. Quod quas, hic unde accusantium cumque fugit? Voluptatem exercitationem accusantium asperiores reiciendis voluptas itaque, ipsam accusamus inventore explicabo in at ullam nesciunt laborum quam pariatur dolorum beatae consequuntur saepe aliquid. Nemo neque sint quibusdam tenetur, at doloremque iure error, distinctio aliquam itaque non rem laudantium officiis! Quidem ipsum nam dolorum alias repellendus quod illum blanditiis nesciunt modi iure! Ut beatae quibusdam, ipsa, porro iste nemo deleniti facere asperiores illo alias eum? Soluta in, obcaecati consequatur quod culpa quaerat quisquam! Perferendis autem sed odit impedit ipsum iusto nesciunt placeat, a debitis vitae modi illum corrupti, tempora est. Ipsum sit molestiae reprehenderit error obcaecati quia minus laudantium voluptatem numquam optio voluptates molestias, omnis, voluptatibus neque consequuntur culpa, quasi at saepe cumque totam eum blanditiis ullam! Distinctio molestiae accusantium magnam assumenda tempora necessitatibus suscipit consequatur nobis repellat qui velit totam veniam blanditiis similique modi esse dolore impedit, possimus, nesciunt ipsum hic. Impedit quibusdam esse porro id enim nisi nihil nemo voluptatem delectus, numquam quae incidunt ipsum nam beatae? Nisi velit minus deleniti, ipsa ad porro voluptate eligendi alias nemo blanditiis repellendus iure quo, rem dolorum nihil in placeat necessitatibus minima nam non dicta ea exercitationem nostrum. Delenit</div>
+  </div>
+  
+</body>
+</html>

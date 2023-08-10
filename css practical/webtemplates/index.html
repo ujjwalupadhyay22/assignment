@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+            height: 121px;
+            background-color: #daac00;
+            display: flex;
+            position: sticky;
+            top: 0%;
+            z-index: 7;
+        }
+        .header1{
+            width: 30%;
+        }
+        .img1{
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        .header2{
+            width: 40%;
+            padding-top: 40px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            padding-left: 50px;
+            color: white;
+        }
+     
+        .header3{
+            width: 30%;
+            padding-top: 40px;
+            padding-left: 100px;
+            position: relative;
+            
+        }
+        .sbar{
+           color: white;
+            padding : 15px;
+            filter: drop-shadow(7.512px 14.127px 9px rgba(74,74,74,0.1));
+            background-color: #fcc302;   
+            text-align: left;
+            position: absolute;
+            border: none;
+        } 
+        
+        .img2{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            left: 250px;
+            top: 50px;
+            z-index: 2;
+        }
+        .filter{
+            width: 65px;
+            height: 46px;
+            background-color: #00bec9;
+            position: absolute;
+            top: 40px;
+            left: 230px;
+            z-index: 1;  
+        }
+        .main{
+            width: 100%;
+            height: 700px;
+            background-color: #fcc302;
+            display: flex;
+        }
+        .main1{
+          width: 60%;
+          
+       }
+       .h41{
+        font-size: 67px;
+        letter-spacing: 1px;
+        color: #ffffff;
+         font-weight: 600;
+        font-family: "Poppins";
+        padding-top: 150px;
+        padding-left: 100px;
+       }
+       .p1{
+        font-size: 29px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Poppins";
+        padding-top: 20px;
+        padding-left: 100px;
+       }
+
+       .main2{
+         width: 40%;
+       
+      }
+      .img3{
+        margin-top: 50px;
+      }
+      .b1{
+        margin-top: 30px;
+        margin-left: 100px;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 12px;
+        font-size: 21px;
+        letter-spacing: 0px;
+        color: #ffffff;
+       font-weight: 600;
+       font-family: "Poppins";
+       border: lightblue;
+       border-radius: 7px;
+       background-color: #00bec9
+      }
+      .b2{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border-radius: 7px;
+        background-color: #daac00;
+        border: 3px solid #ffffff;
+        font-size: 21px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Poppins";
+      }
+      .secondpage{
+        height: 700px;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+      }
+      .sp1{
+        width: 50%;
+      }
+      .sp2{
+        width: 50%;
+        position: relative;
+      }
+      .sp21{
+        width: 400px;
+        height: 400px;
+        background-color: #daac00;
+        position: absolute;
+        background-image: url(images/dog2.png);
+        background-repeat: no-repeat;
+        top: 150px;
+        left: 200px;
+        z-index: 2;
+      
+      }
+      .sp22{
+        width: 252px;
+        height: 206px;
+        background-color: #fcc302;
+        position: absolute;
+        top: 390px;
+        left: 150px;
+        z-index: 1;
+      }
+      
+      
+      .sp24{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        opacity: 0.569;
+        background-color: rgba(218,172,0,0.5686274509803921200);
+        z-index: 3;
+      }
+      .img4{
+        position: absolute;
+        left: 400px;
+        top: 355px;
+        z-index: 5;
+      }
+      .img5{
+        position: absolute;
+        left: 380px;
+        top: 340px;
+        z-index: 4;
+        height: 60px;
+        width: 60px;
+      }
+      .h42{
+        font-size: 50px;
+        color: #313243;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding-top: 190px;
+        padding-left: 100px;
+      }
+      .p2{
+        font-size: 29px;
+        letter-spacing: 0px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        padding-top: 20px;
+        padding-left: 100px;
+      }
+      .b3{
+        width: 175px;
+        height: 65px;
+        border-radius: 7px;
+        background-color: #fcc302;
+        font-size: 29px;
+        letter-spacing: 0px;
+        color: white;
+        font-weight: 400;
+        font-family: "Poppins";
+        margin-top: 20px;
+        margin-left: 100px;
+        border: none;
+      }
+      .thirdpage{
+        width: 100%;
+        height: 900px;
+        background-color: #fcc302;
+      }
+      .tp1{
+        height: 200px;
+        width: 100%;
+       
+      }
+      .h43{
+        font-size: 75px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 20px;
+      }
+      .p3{
+        font-size: 33px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 20px;
+      }
+      .tp2{
+        height: 700px;
+        width: 100%;
+        position: relative;
+       
+      }
+      .tp21{
+        position: absolute;
+        top: 100px;
+        left: 170px;
+        height: 300px;
+        width: 300px;
+        background-image: url(images/dogw1.png);
+        background-repeat: no-repeat;
+      }
+      .tp22{
+        position: absolute;
+        top: 100px;
+        left: 600px;
+        height: 300px;
+        width: 300px;
+        background-image: url(images/dogw2.png);
+        background-repeat: no-repeat;
+
+      }
+      .tp23{
+        position: absolute;
+        top: 100px;
+        right: 200px;
+        height: 300px;
+        width: 300px;
+       background-image: url(images/dogw3.png);
+       background-repeat: no-repeat;
+      }
+      .tp24{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        top: 450px;
+        left: 170px;
+       
+      }
+      .tp25{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        top: 450px;
+        left: 600px;
+        
+      }
+      .tp26{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        top: 450px;
+        right: 200px;
+      
+      }
+      .p4{
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Poppins";
+      }
+      .p5{
+        font-size: 25px;
+        color: #ffffff; 
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 10px;
+      }
+      .fourthpage{
+        height: 700px;
+        width: 100%;
+        display: flex;
+      }
+      .fp1{
+        width: 50%;
+        position: relative;
+       
+      }
+      .fp11{
+        width: 252px;
+        height: 206px;
+        background-color: #fcc302;
+        position: absolute;
+        top: 390px;
+        left: 350px;
+        z-index: 1;
+      }
+      .fp12{
+        width: 400px;
+        height: 400px;
+        background-image: url(images/fourthpageimage.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 160px;
+        left: 150px;
+        z-index: 2;
+      }
+     
+      .fp13{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 160px;
+        left: 150px;
+        background-color: rgba(218,172,0,0.5686274509803921);
+        opacity: 0.569;
+        z-index: 3;
+      }
+      .img6{
+        position: absolute;
+        top: 350px;
+        left: 340px;
+        z-index: 5;
+      }
+      .img7{
+        position: absolute;
+        top: 325px;
+        left: 310px;
+        z-index: 4;
+      }
+      .fp2{
+        width: 50%;
+      }
+      .p6{
+        font-size: 50px;
+        color: #313243;
+        font-weight: 600;
+        font-family: "Poppins";
+        text-align: right;
+        margin-right: 60px;
+        padding-top: 150px;
+      }
+      .p7{
+        font-size: 29px;
+        letter-spacing: 0px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: right;
+        margin-right: 60px;
+        padding-top: 50px;
+        
+      }
+      .b4{
+        width: 182px;
+        height: 69px;
+        border-radius: 7px;
+        background-color: #fcc302;
+        font-size: 21px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Poppins";
+        border: none;
+        margin-top : 40px;
+        margin-left: 520px;
+      }
+      .fifthpage{
+        height: 800px;
+        width: 100%;
+        background-color: #fcc302;
+      }
+      .fip1{
+        height: 300px;
+        width: 100%;
+        
+      }
+      .p8{
+        font-size: 75px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 40px;
+      }
+      .p9{
+        font-size: 33px;
+        color: #ffffff;
+        font-weight: 400;   
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 30px;
+      }
+      .fip2{
+        height: 500px;
+        width: 100%;
+        position: relative;
+      }
+      .fip21{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 150px;
+        background-image: url(images/fp3.png);
+        background-repeat: no-repeat;
+       
+      }
+      .fip22{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 600px;
+        background-image: url(images/fp2.png);
+        background-repeat: no-repeat;
+      }
+      .fip23{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        right: 150px;
+        background-image: url(images/fp1.png);
+        background-repeat: no-repeat;
+      }
+      .b5{
+        position: absolute;
+        top: 340px;
+        left: 200px;
+        font-size: 25px;
+       color: #ffffff;
+       font-weight: 600;
+       font-family: "Poppins";
+       text-align: center;
+       width: 199px;
+       height: 60px;
+       border-radius: 30px;
+       background-color: #00bec9;
+       border: none;
+      }
+      .b6{
+        position: absolute;
+        top: 340px;
+        left: 650px;
+        font-size: 25px;
+       color: #ffffff;
+       font-weight: 600;
+       font-family: "Poppins";
+       text-align: center;
+       width: 199px;
+       height: 60px;
+       border-radius: 30px;
+       background-color: #00bec9;
+       border: none;
+      }
+      .b7{
+       position: absolute;
+      top: 340px;
+      right: 200px;
+      font-size: 25px;
+       color: #ffffff;
+       font-weight: 600;
+       font-family: "Poppins";
+       text-align: center;
+       width: 199px;
+       height: 60px;
+       border-radius: 30px;
+       background-color: #00bec9;
+       border: none;
+      }
+      .sixthpage{
+        height: 900px;
+        width: 100%;
+      
+      }
+      .sip1{
+        height: 300px;
+        width: 100%;
+      }
+      .p10{
+        font-size: 75px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 20px;
+      }
+      .p11{
+        font-size: 33px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 20px;
+      }
+      .sip2{
+        height: 600px;
+        width: 100%;
+        position: relative;
+      }
+      .sip21{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 150px;
+        background-image: url(images/sixthp1.png);
+        background-repeat: no-repeat;
+      }
+      .sip22{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 600px;
+        background-image: url(images/sixthp2.png);
+        background-repeat: no-repeat;
+      }
+      .sip23{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        right: 150px;
+        background-image: url(images/sixthp3.png);
+        background-repeat: no-repeat;
+      }
+      .sip24{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        top: 350px;
+        left: 150px;
+      }
+      .sip25{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        
+        left: 600px;
+        top: 350px;
+      }
+      .sip26{
+        height: 150px;
+        width: 300px;
+        position: absolute;
+        right: 150px;
+        top: 350px;
+        
+      
+      }
+      .p12{
+        font-size: 29px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p13{
+        font-size: 29px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p14{
+        font-size: 29px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p15{
+        font-size: 25px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p16{
+        font-size: 25px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p17{
+        font-size: 25px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .fa-brands{
+     padding-top: 25px;
+      padding-left: 40px;
+      }
+      .seventhpage{
+        height: 500px;
+        width: 100%;
+        background-image: url(images/seventhp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        position: relative;
+      }
+      .svp1{
+        height: 500px;
+        width: 100%;
+        background-color: rgba(252,195,2,0.8392156862745098);
+        opacity: 0.839;
+       
+        position: absolute;
+      }
+      .img8{
+      position: absolute;
+      top: 160px;
+      left: 700px;
+      }
+      .img9{
+        position: absolute;
+        top: 160px;
+        left: 200px;
+      }   
+      .img10{
+        position: absolute;
+        top: 160px;
+        right: 250px;
+      }   
+      .p18{
+        position: absolute;
+        font-size: 42px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins";
+        text-align: right;
+        top: 280px;
+        left: 180px;
+      }
+      .p19{
+        position: absolute;
+        font-size: 42px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins";
+        text-align: right;
+        top: 280px;
+        left: 650px;
+      }
+      .p20{
+        position: absolute;
+        font-size: 42px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins";
+        top: 280px;
+        right: 240px;
+      }
+      .p21{
+        position: absolute;
+        top: 350px;
+        left: 130px;
+        font-size: 38px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: right;
+      }
+      .p22{
+        position: absolute;
+        top: 350px;
+        left: 650px;
+        font-size: 38px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+      }
+      .p23{
+        position: absolute;
+        top: 350px;
+        right: 200px;
+        font-size: 38px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: right;
+      }
+      .eightpage{
+        height: 900px;
+        width: 100%;
+        display: flex;
+      }
+      .ep1{
+        height: 300px;
+        width: 100%;
+       
+      }
+      .p24{
+        font-size: 75px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 50px;
+      }
+      .p25{
+        font-size: 33px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        padding-top: 20px;
+
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1" > <img class="img1" src="images/logo.png" alt=""> </div>
+        <div class="header2" >
+            <a href="">Home</a>
+            <a href="">about</a>
+            <a href="">services</a>
+            <a href="">contact</a>
+        </div>
+        <div class="header3">
+            <input type="text"   value="search" class="sbar" > <img class="img2" src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png" alt="" srcset="">
+            <div class="filter" ></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main1">
+            <h4 class="h41" >First I Wanted To Be <br> a Veterinarian </h4>
+            <p class="p1" >Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Unde quasi culpa corporis possimus atque cumque <br> dolore molestias eos nobis reiciendis.</p>
+            <button type="button" class="b1" >Contact us</button>
+            <button type="button" class="b2" >our services</button>
+        </div>
+        <div class="main2">
+            <img class="img3" src="images/dog.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="secondpage">
+        <div class="sp1" >
+            <h4 class="h42">As a veterinarian and <br>lover of animals. </h4>
+            <p class="p2">Lorem ipsum dolor sit amet con. <br> Laudantium quis numquam volodi, <br> dolore consectetutque? Vel, amet?</p>
+            <button type="button" class="b3" >our service</button>
+        </div>
+        <div class="sp2" >
+            <div class="sp21" ></div>
+            <div class="sp22" ></div>
+            <div class="sp23" ></div>
+            <div class="sp24" ></div>
+            <img class="img4" src="images/Icon (1).png" alt="" srcset="">
+            <img class="img5" src="images/Icon.png" alt="">
+        </div>
+    </div>
+    <div class="thirdpage">
+        <div class="tp1" > <h4 class="h43" >Title Here </h4>
+            <p class="p3" >Lorem ipsum dolor sit amet consectetur adipisicing  <br> aperiam, doloremque. </p>
+        </div>
+        <div class="tp2" >
+            <div class="tp21" ></div>
+            <div class="tp22" ></div>
+            <div class="tp23" ></div>
+            <div class="tp24" > <p class="p4" >Veterinarian</p> <p class="p5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, minima! </p> </div>
+            <div class="tp25" > <p class="p4" >Vaccination Care</p> <p class="p5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, ut!</p> </div>
+            <div class="tp26" > <p class="p4" >Dental care</p> <p class="p5" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, iure?</p> </div>
+        </div>
+    </div>
+    <div class="fourthpage">
+        <div class="fp1" >
+            <div class="fp11" ></div>
+            <div class="fp12" ></div>
+            <div class="fp13" ></div>
+            <img class="img6" src="images/Icon (1).png" alt="" srcset="">
+            <img class="img7" src="images/Icon.png" alt="">
+        </div>
+        <div class="fp2" >
+            <p class="p6" >As a veterinarian and <br> lover of animals </p>
+            <p class="p7" >Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Quisquam repellat <br> laborum cum in porro sit.</p>
+            <button class="b4" type="button">Our service</button>
+        </div>
+    </div>
+    <div class="fifthpage">
+      <div class="fip1">
+        <p class="p8">Title Here</p>
+        <p class="p9">Lorem ipsum dolor sit amet consectetur ad <br>Animi maiores quia optio</p>
+      </div>
+      <div class="fip2">
+        <div class="fip21" ></div>
+        <div class="fip22" ></div>
+        <div class="fip23" ></div>
+        <button class="b5" type="button">Buy Now</button>
+        <button class="b6" type="button">Buy Now</button>
+        <button class="b7" type="button">Buy Now</button>
+      </div>
+    </div>
+    <div class="sixthpage">
+      <div class="sip1" > 
+          <p class="p10">The vetcare team</p>
+          <p class="p11">Lorem ipsum dolor sit amet consectetur ad <br>Animi maiores quia optio</p>
+       </div>
+      <div class="sip2">
+        <div class="sip21" ></div>
+        <div class="sip22" ></div>
+        <div class="sip23" ></div>
+        <div class="sip24" ><p class="p12" >jennifer mullen</p> <p class="p15" >Veterinary</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+         </div>
+        <div class="sip25" ><p class="p13" >sheeran collins</p> <p class="p16" > Administration </p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="sip26" ><p class="p14" >jennifer mullen</p> <p class="p17" > Veterinary </p> 
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="seventhpage">
+      <div class="svp1"></div>
+      <img class="img8" src="images/Icon 1.png" alt="">
+      <img class="img9" src="images/Icon 2.png" alt="">
+      <img class="img10" src="images/Icon 3.png" alt="">
+      <p class="p18" >+34793</p>
+      <p class="p19" >+457893</p>
+      <p class="p20" >+564783</p>
+      <p class="p21" >Happy clients</p>
+      <p class="p22" >department</p>
+      <p class="p23" >Vaccination</p>
+    </div>
+    <div class="eightpage">
+      <div class="ep1" >
+        <p class="p24"> Recent post </p>
+        <p class="p25">Lorem ipsum dolor sit amet consectetur ad <br>Animi maiores quia optio</p>
+      </div>
+      <div class="ep2" ></div>
+    </div>
+</body>
+</html>

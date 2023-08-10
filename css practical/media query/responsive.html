@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 100px;
+            background-color: aqua;
+        }
+        .main{
+            display: flex;
+            height: 200px;
+            background-color: brown;
+        }
+        @media (min-width:320px) and (max-width:480px) {
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                background-color: yellow;
+            }
+            #two-1{
+                width: 100%;
+            }
+            #two-2{
+                width: 100%;
+            }
+            #two-3{
+                width: 100%;
+            }
+            #two-4{
+                width: 100%;
+            }
+        }
+        @media  (max-width:1200px) {
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                background-color:red;
+            }
+            #two-1{
+                width: 50%;
+            }
+            #two-2{
+                width: 50%;
+            }
+            #two-3{
+                width: 50%;
+            }
+            #two-4{
+                width: 50%;
+            }
+        }
+        @media (min-width:481px) and (max-width:768px) {
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                background-color:green;
+            }
+            #two-1{
+                width: 25%;
+            }
+            #two-2{
+                width: 50%;
+            }
+            #two-3{
+                width: 25%;
+            }
+            #two-4{
+                width: 100%;
+            }
+        }
+        @media (min-width:769px) and (max-width:1024px){
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                background-color:blue
+            }
+            #two-1{
+                width: 30%;
+            }
+            #two-2{
+                width: 70%;
+            }
+            #two-3{
+                width: 30%;
+            }
+            #two-4{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">  </div>
+        <div class="main">
+            <div class="one" id="two-1">1</div>
+            <div class="one" id="two-2">2</div>
+            <div class="one" id="two-3">3</div>
+            <div class="one" id="two-4">4</div>
+        </div>
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+            font-size: 30px;
+            background-color: black;
+            color: aliceblue;
+            padding-top: 30px;
+            padding-left: 400px;
+            position: relative;
+            
+        }
+        .one{
+            padding-left: 50px;
+        }
+        .main{
+            height: 600px;
+            background-color: green;
+        }
+        .dropdown1{
+            position: absolute;
+            top: 100px;
+            display: none;
+            border: solid ;
+            background-color: grey;
+            
+        }
+        #one-3:hover .dropdown1{
+            display: block;
+        }
+        .dropdown2{
+            position: absolute;
+            display: none;
+            left: 150px;
+            top: 100px;
+            border: solid;
+            background-color: gray;
+        }
+        
+        #dp:hover .dropdown2{
+            display: block;
+        }
+        .dropdown3{
+            position: absolute;
+            display: none;
+            top: 118px;
+            left: 84px;
+            border: solid;
+            background-color: grey;
+        }
+        #two-4:hover .dropdown3 {
+            display: block;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="one" id="one-1">home</div>
+        <div class="one" id="one-2">about</div>
+        <div class="one" id="one-3">services
+            <div class="dropdown1" >
+            <div>service one </div>
+            <div>service two </div>
+            <div>service three </div>
+            <div id="dp" >service four 
+                <div class="dropdown2" >
+                    <div class="two" id="two-1"> service </div>
+                    <div class="two" id="two-2"> service </div>
+                    <div class="two" id="two-3"> service </div>
+                    <div class="two" id="two-4"> service
+                        <div class="dropdown3" >
+                        <div class="three" id="three-1">service</div>
+                        <div class="three" id="three-2">service</div>
+                        <div class="three" id="three-3">service</div>
+                        <div class="three" id="three-4">service</div>
+                        <div class="three" id="three-5">service</div>
+                    </div>
+                    <div class="two" id="two-5"> service </div>
+                </div>
+            </div>
+            <div>service five </div>
+        </div>
+        </div>
+      
+    </div>
+    <div class="main"></div>
+</body>
+</html>

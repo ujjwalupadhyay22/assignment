@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(241, 186, 104);
+            display: flex;
+        }
+        .header1{
+            width: 30%;
+            font-size: 60px;
+            color: black;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        .header2{
+            width: 70%;
+            margin-top: 25px;
+            margin-left: 250px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            padding: 20px;
+        }
+        .main{
+            height: 600px;
+            background-color: rgb(237, 179, 103);
+            display: flex;
+        }
+        .main1{
+            height: 400px;
+            width: 20%;
+            background-color: black;
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+        }
+        .nepal{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(225, 153, 59);
+            position: absolute;
+            font-size: 30px;
+            padding-left: 5px;
+            padding-top: 5px;   
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 15px;
+            right: 5px;
+        }
+        @media (max-width:480px){
+            
+            .header {
+                display: none;   
+            }
+            .main1{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header1"><h6>coding nepal</h6></div>
+    <div class="header2">
+        <a href="">Home</a>
+        <a href="">about</a>
+        <a href="">services</a>
+        <a href="">contact</a>
+        <a href="">portfoliio</a>
+    </div>
+</div>
+<div class="main" >
+    <div class="main1">
+        <div class="nepal"><p> coding nepal</p>
+            <img src="https://icon-library.com/images/google-menu-icon/google-menu-icon-6.jpg" alt="" srcset="">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
